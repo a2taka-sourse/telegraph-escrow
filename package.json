@@ -1,0 +1,16 @@
+{
+  "name": "telegraph-escrow",
+  "version": "0.1.0",
+  "description": "Pay Telegraph asks from the escrow ledger (works when x402 exact settlement fails) and verify each charge in the epoch ledger block.",
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": { ".": "./src/index.mjs" },
+  "bin": { "telegraph-escrow": "bin/cli.mjs" },
+  "scripts": { "test": "node --test test/offline.test.mjs" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "viem": "^2.58.2" },
+  "keywords": ["telegraph", "x402", "escrow", "agents", "usdc", "sepolia"],
+  "author": "a2taka",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/a2taka-sourse/telegraph-escrow" }
+}
